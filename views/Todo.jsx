@@ -9,4 +9,3 @@ export class Todo extends React.Component {
 
     }
 }
-

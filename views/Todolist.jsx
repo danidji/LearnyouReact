@@ -1,5 +1,6 @@
 import React from 'react';
 import { Todo } from './Todo'
+import PropTypes from 'prop-types';
 
 export class TodoList extends React.Component {
     render() {
@@ -8,6 +9,7 @@ export class TodoList extends React.Component {
                 <tbody>
                     <Todo title="Shopping">Milk</Todo>
                     <Todo title="Hair cut">13:00</Todo>
+                    <Todo title="Learn React">15:00</Todo>
                 </tbody>
             </table>
         </div>
@@ -15,3 +17,6 @@ export class TodoList extends React.Component {
 
 
 }
+Todo.propTypes = {
+    title: PropTypes.string.isRequired
+};
