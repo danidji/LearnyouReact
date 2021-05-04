@@ -1,5 +1,11 @@
 import React from 'react';
 
+let style = {
+    border: "1px solid black;"
+    // tableContent: {
+    // }
+};
+
 export class Todo extends React.Component {
     constructor(props) {
         super(props);
@@ -16,11 +22,11 @@ export class Todo extends React.Component {
         return (
 
             <tr>
-                <td style={{ border: "1px solid black;" }}>
+                <td style={style}>
                     <input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)} />
                 </td>
-                <td style={{ border: "1px solid black;" }}>{this.props.title}</td>
-                <td style={{ border: "1px solid black;" }}>{this.props.children}</td>
+                <td style={style}>{this.props.title}</td>
+                <td style={style}>{this.props.children}</td>
             </tr>
         )
 
