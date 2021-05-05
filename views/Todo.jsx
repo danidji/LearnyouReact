@@ -20,7 +20,7 @@ export class Todo extends React.Component {
         return (
 
             <tr>
-                {console.log('data', this.props.data)}
+                {console.log('data', this.props.title)}
                 <td style={style}>
                     <input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)} />
                 </td>

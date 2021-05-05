@@ -11,10 +11,16 @@ require('babel/register')({
 });
 
 let data = [
-    { "Shopping": process.argv[3] }
-    , { "Hair cut": process.argv[4] }
+    {
+        title: "Shopping"
+        , detail: process.argv[3]
+    }
+    , {
+        title: "Hair cut"
+        , detail: process.argv[4]
+    }
 ];
-console.log(data)
+// console.log(data)
 app.use('/', function (req, res) {
     res.render('index', { data: data });
 });

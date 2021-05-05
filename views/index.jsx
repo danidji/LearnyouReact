@@ -7,7 +7,7 @@ export default class TodoBox extends React.Component {
         return <div className="todoBox">
             <h1>Todos</h1>
             <TodoList data={this.props.data} />
-            {console.log('Todolist', <TodoList data={this.props.data} />)}
+            {/* {console.log('data', this.props)} */}
 
             <TodoForm />
         </div>
